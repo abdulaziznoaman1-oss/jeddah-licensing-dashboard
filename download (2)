@@ -1,0 +1,7 @@
+__pycache__/
+*.sqlite*
+.env
+/data/*
+!.gitkeep
+*.xlsx
+*.csv

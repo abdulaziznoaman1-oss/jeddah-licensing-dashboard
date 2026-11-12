@@ -1,13 +1,11 @@
+# Optional Blueprint for a disposable demonstration only.
+# WARNING: Free services do not provide a persistent disk. Uploaded data can be lost on restart.
 services:
   - type: web
     name: jeddah-licensing-dashboard
     runtime: docker
-    plan: starter
+    plan: free
     healthCheckPath: /healthz
-    disk:
-      name: licensing-data
-      mountPath: /var/data
-      sizeGB: 1
     envVars:
       - key: APP_ENV
         value: production
